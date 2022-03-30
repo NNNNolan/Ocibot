@@ -10,7 +10,7 @@ mkdir -p  /root/ocibotConfig/BotConfig
 ```
 {
   //你的TGID
-  "BotAdminID": "761208002",
+  "BotAdminID": "",
   //socks or http 代理类型 值只有socks 或者http 不用代理可以不填
   "ProxyType": "",
   //代理地址 如果是Http类型需要添加http://ip
