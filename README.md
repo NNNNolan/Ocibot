@@ -34,6 +34,7 @@ mkdir -p  /root/ocibotConfig/BotConfig
 mkdir -p  /root/ocibotConfig/OracleConfig
 ```
 ##OracleConfig  文件说明
+
 ###一个甲骨文帐号一个配置和秘钥存放在OracleConfig中 文件名称要以 `_config`结尾 如首尔_config
 ```
 [DEFAULT]
@@ -45,6 +46,7 @@ key_file=./OracleConfig/秘钥文件.pem
 
 ```
 ###注意配置文件中的key_file=./OracleConfig/ 是不变的 只用修改秘钥名称
+
 ###bot启动是会读取以 `_config`结尾的的文件判断有多少个甲骨文帐号
 
 
