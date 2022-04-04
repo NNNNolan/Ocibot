@@ -1,5 +1,9 @@
 # Ocibot
-多甲骨文IP切换tgbot
+基于NET6 oci-dotnet-sdk 多甲骨文IP切换tgbot
+
+## 更新
+
+1.添加webapi 支持第三方调用更换API
 
 ## 首先创建Bot配置文件夹
 ```
@@ -56,7 +60,7 @@ cd /root/ocibotConfig
 ```
 ###arm需要将latest 更换为arm 即可
 ```
-sudo docker run   --name ocibot    -d  -v  "$(pwd)"/BotConfig:/app/BotConfig \
+sudo docker run   --name ocibot   -p 6060:6060  -d  -v  "$(pwd)"/BotConfig:/app/BotConfig \
 -v  "$(pwd)"/OracleConfig:/app/OracleConfig \
 -it --privileged=true  nolanhzy/ocibot:latest
 ```
